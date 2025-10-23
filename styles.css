@@ -1,0 +1,70 @@
+/* GLOBAL STYLING */
+body {
+  margin: 0;
+  background-color: goldenrod
+}
+
+.background {
+  background-image: url('https://wallpaperaccess.com/full/8100279.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.navList {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.arrayLi {
+  display: inline-block;
+  justify-content: center;
+  max-width: 20%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  line-height: 22px;
+  background-color: rgb(82, 217, 150);
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+  padding: 16px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.heroText,
+.heroImg {
+  width: 50%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+/* MEDIA for tablets and under*/
+@media (max-width: 769px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroText,
+  .heroImg {
+    width: 100%;
+  }
+}
